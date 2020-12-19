@@ -7,4 +7,4 @@ The" Mandelbrot set is the set obtained from the quadratic recurrence equation
 
 with z_0=C, where points C in the complex plane for which the orbit of z_n does not tend to infinity are in the set. Setting z_0 equal to any point in the set that is not a periodic point gives the same result. The Mandelbrot set was originally called a mu molecule by Mandelbrot. J. Hubbard and A. Douady proved that the Mandelbrot set is connected.
 
-Please check https://mathworld.wolfram.com/MandelbrotSet.html for more information.
+Please check https://mathworld.wolfram.com/MandelbrotSet.html and https://www.youtube.com/watch?v=6IWXkV82oyY for more information.
