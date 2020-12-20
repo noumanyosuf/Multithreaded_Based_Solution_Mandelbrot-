@@ -16,10 +16,10 @@ The Mandelbrot application demonstrates multi-thread programming using Qt. It sh
 The Mandelbrot application supports zooming and scrolling using the mouse. To avoid freezing the main thread's event loop (and, as a consequence, the application's user interface), we put all the fractal computation in a separate worker thread.  Each worker thread is responsible for calculating one Y scale line of the image, hence there are Widget::height() no of threads created for processing on each resize or zoom event. The thread emits a signal when it is done rendering the fractal.
 
 The application consists of following classes: </br>
-JobResult: hold the calculated result of a scale line of the image. </br>
-Job: is a QRunnable subclass that calculate the Mandelbrot iteration and emit the job result. </br>
-MandelbrotCalculator: is the one which is responsible of creating the Job threads with y pixel position value and then rearrange the processed result from Job threads to a QList for the main thread to dispaly it on the view. </br>
-MandelbrotWidget: is a QWidget subclass that shows the Mandelbrot set on screen and lets the user zoom and scroll. </br>
+<p style="text-decoration: underline;">JobResult</p> hold the calculated result of a scale line of the image. </br>
+<p style="text-decoration: underline;">Job</p> is a QRunnable subclass that calculate the Mandelbrot iteration and emit the job result. </br>
+<p style="text-decoration: underline;">MandelbrotCalculator</p> is the one which is responsible of creating the Job threads with y pixel position value and then rearrange the processed result from Job threads to a QList for the main thread to dispaly it on the view. </br>
+<p style="text-decoration: underline;">MandelbrotWidget</p> is a QWidget subclass that shows the Mandelbrot set on screen and lets the user zoom and scroll. </br>
 
 <h3>Mandelbrot image</h3>
  <div align="center">
