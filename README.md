@@ -11,9 +11,9 @@ with z_0=C, where points C in the complex plane for which the orbit of z_n does 
 Please check https://mathworld.wolfram.com/MandelbrotSet.html and https://www.youtube.com/watch?v=6IWXkV82oyY for more information.
 
 <h3>About the project</h3>
-Mandelbrot calculation is very task heavy calculation and to genrate each pixal of the image for each rescale, the every pixal of the image needs to be recalculated. Clearly, this can not be done with a single main thread, and needs well organzied and handled worker thread to for computation.
-The Mandelbrot application demonstrates multi-thread programming using Qt. It shows how to use a worker thread to perform heavy computations without blocking the main thread's event loop.
-The Mandelbrot application supports zooming and scrolling using the mouse. To avoid freezing the main thread's event loop (and, as a consequence, the application's user interface), we put all the fractal computation in a separate worker thread.  Each worker thread is responsible for calculating one Y scale line of the image, hence there are Widget::height() no of threads created for processing on each resize or zoom event. The thread emits a signal when it is done rendering the fractal.
+Mandelbrot calculation is a very task heavy calculation and to generate each pixel of the image for each rescale, every pixel of the image needs to be recalculated. Clearly, this can not be done with a single main thread and needs well organized and handled worker thread for computation. 
+The Mandelbrot application demonstrates multi-thread programming using Qt. It shows how to use a worker thread to perform heavy computations without blocking the main thread's event loop. The Mandelbrot application supports zooming and scrolling using the mouse. 
+To avoid freezing the main thread's event loop (and, as a consequence, the application's user interface), we put all the fractal computation in a separate worker thread.  Each worker thread is responsible for calculating one Y scale line of the image, hence there are Widget::height() no of threads created for processing on each resize or zoom event. The thread emits a signal when it is done rendering the fractal.
 
 The application consists of following classes: </br>
 <ins>JobResult</ins> hold the calculated result of a scale line of the image. </br>
