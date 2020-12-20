@@ -21,9 +21,14 @@ The application consists of following classes: </br>
 <ins>MandelbrotCalculator</ins> is the one which is responsible of creating the Job threads with y pixel position value and then rearrange the processed result from Job threads to a QList for the main thread to dispaly it on the view. </br>
 <ins>MandelbrotWidget</ins> is a QWidget subclass that shows the Mandelbrot set on screen and lets the user zoom and scroll. </br>
 
+<h3>High Level design</h3>
+ <div align="center">
+    <img src="https://github.com/noumanyosuf/Multithreaded_Based_Solution_Mandelbrot-/blob/main/architecture_design.PNG" width="800"</img> 
+</div>
+
 <h3>Mandelbrot image</h3>
  <div align="center">
-    <img src="https://github.com/noumanyosuf/Multithreaded_Based_Solution_Mandelbrot-/blob/main/mandelbrot.gif" width="500"</img> 
+    <img src="https://github.com/noumanyosuf/Multithreaded_Based_Solution_Mandelbrot-/blob/main/mandelbrot.gif" width="400"</img> 
 </div>
 
 
