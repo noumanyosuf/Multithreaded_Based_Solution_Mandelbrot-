@@ -22,3 +22,6 @@ MandelbrotCalculator: is the one which is responsible of creating the Job thread
 MandelbrotWidget: is a QWidget subclass that shows the Mandelbrot set on screen and lets the user zoom and scroll. </br>
 
 <h3>Mandelbrot image</h3>
+ <div align="center">
+    <img src="https://github.com/noumanyosuf/Multithreaded_Based_Solution_Mandelbrot-/blob/main/mandelbrot.gif" width="500"</img> 
+</div>
